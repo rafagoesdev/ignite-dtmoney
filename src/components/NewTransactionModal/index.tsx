@@ -34,13 +34,13 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
                 <input type="number" placeholder="Valor"/>  
 
                 <TransactionTypeContainer>
-                    <button
+                    <RadioBox
                     type="button"
                     onClick={() => { setType('deposit'); }}
                     >
                         <img src={incomeImg} alt="Entrada" />
                         <span>Entrada</span>
-                    </button>
+                    </RadioBox>
 
                     <RadioBox 
                     type="button" 
